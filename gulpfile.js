@@ -48,7 +48,7 @@ gulp.task('clean-distribution', function() {
 
 gulp.task('watch', ['styles', 'browserify', 'copy-fonts', 'bootstrap'], function () {
   gulp.watch([
-    'assets/styles/**/*.scss'
+    'assets/styles/*.scss'
   ], ['styles']);
 
   gulp.watch([
@@ -73,11 +73,11 @@ gulp.task('styles', function() {
     .pipe(plumber({errorHandler: onError}))
     .pipe(gulp.dest('./temp/styles'))
     .pipe(compass({
-      css: './assets/css',
-      sass: './assets/styles'
+      css: './public/css',
+      sass: './temp/styles'
     }))
     .pipe(plumber.stop())
-    .pipe(gulp.dest('./assets/css'))
+    .pipe(gulp.dest('./public/css'))
     .pipe(browserSync.stream())
 });
 

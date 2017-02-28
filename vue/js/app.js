@@ -36960,7 +36960,6 @@ const app = new Vue({
   router,
   render: h => h(App),
   data: {
-    auth:     Auth,
     api_url:  Config.api_url,
     tools:    Tools,
   },
@@ -37015,7 +37014,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   if (!module.hot.data) {
     hotAPI.createRecord("data-v-4ce45034", __vue__options__)
   } else {
-    hotAPI.rerender("data-v-4ce45034", __vue__options__)
+    hotAPI.reload("data-v-4ce45034", __vue__options__)
   }
 })()}
 },{"vue":22,"vue-hot-reload-api":18}],25:[function(require,module,exports){
@@ -37041,7 +37040,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   if (!module.hot.data) {
     hotAPI.createRecord("data-v-5b0b222a", __vue__options__)
   } else {
-    hotAPI.rerender("data-v-5b0b222a", __vue__options__)
+    hotAPI.reload("data-v-5b0b222a", __vue__options__)
   }
 })()}
 },{"vue":22,"vue-hot-reload-api":18}],26:[function(require,module,exports){

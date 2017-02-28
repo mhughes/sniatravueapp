@@ -32,7 +32,6 @@ const app = new Vue({
   router,
   render: h => h(App),
   data: {
-    auth:     Auth,
     api_url:  Config.api_url,
     tools:    Tools,
   },
